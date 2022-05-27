@@ -1,4 +1,4 @@
-﻿using System.Runtime.InteropServices;
+using System.Runtime.InteropServices;
 
 namespace Mapster.Common.MemoryMappedTypes;
 
@@ -104,6 +104,25 @@ public enum GeometryType : byte
     Polyline,
     Polygon,
     Point
+}
+
+public enum TerrainTypes : int
+{
+    admin_level,
+    amenity,
+    boundary,
+    building,
+    farm,
+    highway,
+    landuse,
+    leisure,
+    name,
+    natural,
+    place,
+    railway,
+    reservoir,
+    residential,
+    water
 }
 
 [StructLayout(LayoutKind.Explicit, Pack = 1)]
